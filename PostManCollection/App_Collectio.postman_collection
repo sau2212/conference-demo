@@ -1,0 +1,115 @@
+{
+	"variables": [],
+	"info": {
+		"name": "App_Collectio",
+		"_postman_id": "4d052ec4-bd2a-d694-3884-849e3b8f1cab",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET All session",
+			"request": {
+				"url": "http://localhost:8080/api/v1/sessions",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get SessionByID",
+			"request": {
+				"url": "http://localhost:8080/api/v1/sessions/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET All speaker",
+			"request": {
+				"url": "http://localhost:8080/api/v1/speakers",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Speaker By id",
+			"request": {
+				"url": "http://localhost:8080/api/v1/speakers/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new session",
+			"request": {
+				"url": "http://localhost:8080/api/v1/sessions",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"session_name\": \"My New Session\",\n     \"session_description\": \"Dummy Session for testing\",\n     \"session_length\": 30\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create a speaker",
+			"request": {
+				"url": "http://localhost:8080/api/v1/speakers",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"first_name\": \"Test\",\n        \"last_name\": \"Speaker\",\n        \"title\": \"Staff JAVA Engineer\",\n        \"company\": \"Astar\",\n        \"speaker_bio\": \"Test\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Session",
+			"request": {
+				"url": "http://localhost:8080/api/v1/sessions/93",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"session_id\": 93,\n    \"session_name\": \"My New Session\",\n    \"session_description\": \"Dummy Session for testing\",\n\t\"session_length\": 40\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
